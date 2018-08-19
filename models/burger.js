@@ -9,3 +9,7 @@ var burger = {
         });
     }
 }
+
+
+//Export the burger database data to the burger controller
+module.exports = burger;
