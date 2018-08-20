@@ -12,8 +12,17 @@ selectAll: function (column, table, callback) {
         }
         callback(result);
     });
-}
-
+},
+//route to update burgers table
+    updateOne: function(column, table, newValue, condition, callback) {
+        var queryString = ("UPDATE " + table + " SET " + column + " = " + newValue + " WHERE " + condition + ";");
+        connection.query(queryString, function (err, result) {
+            if (err) {
+                throw err;
+            }
+            callback(result);
+        });
+    }
 };
 
 

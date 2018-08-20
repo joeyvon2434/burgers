@@ -52,6 +52,12 @@
     margin: 5px auto 5px auto;
 }
 
+#order-burger-header {
+    text-align: center;
+    margin: 0 auto;
+    clear: both;
+}
+
 #burger-form {
     width: 50%;
     clear: both;
