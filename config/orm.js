@@ -1,5 +1,5 @@
 //Bring in MySQL connection
-var connnection = require("../config/connection.js")
+var connection = require("../config/connection.js")
 
 //Create ORM (object relational mapping) object below with calls to the MySQL database
 var orm = {
