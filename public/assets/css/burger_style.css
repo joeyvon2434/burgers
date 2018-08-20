@@ -1,14 +1,20 @@
 #wrapper {
+    position: absolute;
     width: 100%;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 #content {
     width: 80%;
+    margin: 2% auto 2% auto;
     position: relative;
 }
 
 #logo {
+    display: block;
     position: relative;
     width: 60%;
     margin: 2% auto 2% auto;
@@ -18,6 +24,13 @@
     width: 80%;
     position: relative;
     text-align: center;
+    margin: 0 auto 2% auto;
+}
+
+#table-box {
+    display: block;
+    position: relative;
+    min-width: 100%;
 }
 
 .burger-display {
@@ -26,13 +39,37 @@
     position: relative;
 }
 
-.available-burgers {
+#available-burgers {
     float: left;
 }
 
-.eaten-burgers {
+#eaten-burgers {
     float: right;
 }
+
+.table-heading {
+    text-align: center;
+    margin: 5px auto 5px auto;
+}
+
+#burger-form {
+    width: 50%;
+    clear: both;
+    margin: 2% auto 2% auto;
+    text-align: center;
+}
+
+#burger-label {
+    margin: auto 5px auto 5px;
+}
+
+#order-burger-button {
+    position: relative;
+    display: block;
+    margin: 10px auto 10px auto;
+}
+
+
 
 
 
