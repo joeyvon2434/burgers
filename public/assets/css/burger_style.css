@@ -1,0 +1,38 @@
+#wrapper {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#content {
+    width: 80%;
+    position: relative;
+}
+
+#logo {
+    position: relative;
+    width: 60%;
+    margin: 2% auto 2% auto;
+}
+
+#burger-head {
+    width: 80%;
+    position: relative;
+    text-align: center;
+}
+
+.burger-display {
+    display: block;
+    width:45%;
+    position: relative;
+}
+
+.available-burgers {
+    float: left;
+}
+
+.eaten-burgers {
+    float: right;
+}
+
+
+

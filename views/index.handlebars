@@ -1,0 +1,35 @@
+<div id="wrapper">
+    <div id="content">
+
+        <img id="logo" src="/public/assets/images/burger.png" alt="burger picture">
+        <h1 id="burger-head">Burger Dive!</h1>
+
+        <div id="available-burgers" class="burger-display">
+            <h2>Burgers Ready to Eat</h2>
+            <ul>
+                {{#each burgers}}
+                    {{#unless devoured}} 
+                        <li>
+                            <p class="burger-name-block">{{burger_name}}</p>
+                            <button class="eat-button" data-id="{{this.id}}">Eat Burger!</button>
+                        </li>
+                    {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+
+        <div id="eaten-burgers" class="burger-display">
+            <h2>Devoured Burgers</h2>
+            <ul>
+                {{#each burgers}}
+                    {{#if devoured}}
+                        <li>
+                            <p class="burger-name-block">{{burger_name}}</p>
+                        </li>
+                    {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+
+    </div>
+</div>
