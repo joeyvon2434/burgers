@@ -1,9 +1,21 @@
 
+
+
+
+
+
+
+
+
+
+
 body {
     color: rgb(32, 26, 30);
     text-shadow: 1px 1px rgb(192, 192, 192);
-    background-color: #80AED9;
-    background-image: linear-gradient(to right, rgb(173, 209, 241), #5DD9C1, rgb(173, 209, 241));    
+    background-color: #A8EDEA;
+
+    background-image: radial-gradient(circle, #FED6E3, #A8EDEA);
+
 }
 
 #wrapper {
@@ -49,8 +61,7 @@ body {
     width: 45%;
     position: relative;
     border: 2px solid #B12727;
-    background-color: #80AED9;
-    background-color: rgb(128, 174, 217, 0.65);
+    background-color: #053f8b;
     padding-bottom: 10px;
     box-shadow: 2px 2px 2px #41337A;
 }
@@ -60,18 +71,27 @@ body {
     padding: 0;
 }
 
+.table-heading {
+    color: #FFC53A;
+    text-shadow: 1px 1px black;
+}
+
 .burger-display ul li {
     position: relative;
     width: 80%;
-    margin: 2% auto;
+    margin: 3% auto;
     font-size: 20px;
     text-shadow: none;
     list-style-type: none;
     border: 1px solid #32292F;
     padding: 5px 5%;
-    background-color: rgb(168, 168, 168, 0.5);
+    background-color: rgb(219, 210, 188);
     text-align: center;
     box-shadow: 2px 2px 2px #41337A;
+}
+
+p {
+    margin: 10px;
 }
 
 .eat-button, #order-burger-button {
