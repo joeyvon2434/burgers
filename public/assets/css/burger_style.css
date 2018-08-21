@@ -1,3 +1,11 @@
+
+body {
+    color: rgb(32, 26, 30);
+    text-shadow: 1px 1px rgb(192, 192, 192);
+    background-color: #80AED9;
+    background-image: linear-gradient(to right, rgb(173, 209, 241), #5DD9C1, rgb(173, 209, 241));    
+}
+
 #wrapper {
     position: absolute;
     width: 100%;
@@ -16,8 +24,9 @@
 #logo {
     display: block;
     position: relative;
-    width: 60%;
+    width: 40%;
     margin: 2% auto 2% auto;
+    box-shadow: 2px 2px 2px #41337A;
 }
 
 #burger-head {
@@ -28,16 +37,55 @@
 }
 
 #table-box {
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
     position: relative;
     min-width: 100%;
+
 }
 
 .burger-display {
     display: block;
-    width:45%;
+    width: 45%;
     position: relative;
+    border: 2px solid #B12727;
+    background-color: #80AED9;
+    background-color: rgb(128, 174, 217, 0.65);
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 2px #41337A;
 }
+
+.burger-display ul {
+    margin: 0;
+    padding: 0;
+}
+
+.burger-display ul li {
+    position: relative;
+    width: 80%;
+    margin: 2% auto;
+    font-size: 20px;
+    text-shadow: none;
+    list-style-type: none;
+    border: 1px solid #32292F;
+    padding: 5px 5%;
+    background-color: rgb(168, 168, 168, 0.5);
+    text-align: center;
+    box-shadow: 2px 2px 2px #41337A;
+}
+
+.eat-button, #order-burger-button {
+    background-color: #41337A;
+    border: 1px solid #B12727;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #41337A;
+    color: rgb(247, 195, 26);
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
 
 #available-burgers {
     float: left;
@@ -45,6 +93,7 @@
 
 #eaten-burgers {
     float: right;
+    margin-left: 10%;
 }
 
 .table-heading {
@@ -54,7 +103,7 @@
 
 #order-burger-header {
     text-align: center;
-    margin: 0 auto;
+    margin: 20px auto;
     clear: both;
 }
 
@@ -63,10 +112,15 @@
     clear: both;
     margin: 2% auto 2% auto;
     text-align: center;
+    font-size: 20px;
+}
+
+#new-burger-name {
+    font-size: 20px;
 }
 
 #burger-label {
-    margin: auto 5px auto 5px;
+    margin: auto 5px 10px 5px;
 }
 
 #order-burger-button {
