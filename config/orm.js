@@ -22,6 +22,16 @@ selectAll: function (column, table, callback) {
             }
             callback(result);
         });
+    },
+    insertOne: function(column, table, newValue, callback) {
+        //var queryString = "INSERT INTO " + table + " (" + column + ") VALUES (" + newValue + ");";
+        var queryString = "INSERT INTO " + table + " (" + column + ") VALUES ('" + newValue + "');";
+        connection.query(queryString, function(err, result) {
+            if (err) {
+                throw err;
+            }
+            callback(result);
+        });
     }
 };
 

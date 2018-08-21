@@ -62,4 +62,20 @@
 
     });// end update function
 
+        //function to add a burger
+        $("#burger-form").on('submit', function(event) {
+            event.preventDefault();
+            var newBurger = {
+                name: $("#new-burger-name").val()
+            }
+
+            $.ajax("/api/burgers", {
+                type: "POST",
+                data: newBurger
+            }).then(function() {
+                console.log('New burger ordered.');
+                location.reload();
+            });
+        }); //end create new burger function
+
 </script>

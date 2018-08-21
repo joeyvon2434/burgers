@@ -13,6 +13,12 @@ var burger = {
         orm.updateOne("devoured", "burgers", newValue, condition, function(result) {
             callback(result); //this outputs the database result
         });
+    },
+    create: function(burgerName, callback) {
+        orm.insertOne("burger_name", "burgers", burgerName, function(result) {
+            callback(result);
+        });
+
     }
 }
 

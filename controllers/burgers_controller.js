@@ -32,8 +32,6 @@ router.put("/api/burgers/:id", function (req, res) {
 
     //check newValue form
     console.log('newvalue ' + newValue);
-
-
    
    burger.update(condition, newValue, function (result) {
         if (result.changedRows == 0) {
@@ -45,6 +43,14 @@ router.put("/api/burgers/:id", function (req, res) {
 
 });
 
+//create a new burger and add it to the ready to be eaten list
+router.post("/api/burgers", function(req, res) {
+    var burgerName = req.body.name;
+
+    burger.create(burgerName, function (result) {
+        res.json({id: result.insertId});
+    })
+});
 
 //Export routes for server.js
 module.exports = router;
