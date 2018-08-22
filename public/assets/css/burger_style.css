@@ -1,14 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
 body {
     color: rgb(32, 26, 30);
     text-shadow: 1px 1px rgb(192, 192, 192);
@@ -147,6 +137,26 @@ p {
     position: relative;
     display: block;
     margin: 10px auto 10px auto;
+}
+
+#enter-a-burger {
+    display: none;
+    width: 50%;
+    height: 50vh;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    z-index: 2;
+    padding: 20px 10px 10px 10px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    border: 2px solid red;
+    background-color: rgb(177, 177, 177);
+}
+
+#enter-a-burger #close-button {
+    margin: 5px auto;
 }
 
 

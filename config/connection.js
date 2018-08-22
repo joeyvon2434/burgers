@@ -3,11 +3,12 @@
 var mysql = require('mysql');
 
 
-//connection config
+//connection config for JAWS DB or a local database
 var connection;
+//JAWS
 if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
-
+//Local
 } else { 
     connection = mysql.createConnection({
     host: "localhost",

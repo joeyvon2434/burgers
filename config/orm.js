@@ -23,8 +23,8 @@ selectAll: function (column, table, callback) {
             callback(result);
         });
     },
+    //route to add a burger to the table
     insertOne: function(column, table, newValue, callback) {
-        //var queryString = "INSERT INTO " + table + " (" + column + ") VALUES (" + newValue + ");";
         var queryString = "INSERT INTO " + table + " (" + column + ") VALUES ('" + newValue + "');";
         connection.query(queryString, function(err, result) {
             if (err) {

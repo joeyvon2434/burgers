@@ -25,13 +25,6 @@ router.put("/api/burgers/:id", function (req, res) {
     var condition = "id = " + req.params.id;
     console.log('req: ' + req.body.eaten);
     var newValue = req.body.eaten;
-
-   //check form of condition
-   console.log("condition: " + condition);
-
-
-    //check newValue form
-    console.log('newvalue ' + newValue);
    
    burger.update(condition, newValue, function (result) {
         if (result.changedRows == 0) {
